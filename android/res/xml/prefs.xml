@@ -10,7 +10,7 @@
             android:title="@string/title_use_hardware_acceleration_preference" />
 
         <ListPreference
-            android:defaultValue="dynamic"
+            android:defaultValue="pull"
             android:dialogTitle="@string/dialog_title_list_streaming_mode_preference"
             android:entries="@array/entries_list_streaming_mode_preference"
             android:entryValues="@array/entryvalues_list_streaming_mode_preference"
@@ -35,14 +35,14 @@
     <PreferenceCategory android:title="@string/auto_connect_settings">
 
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="auto_connect_to_last_server"
             android:summary="@string/summary_auto_connect_to_last_server_preference"
             android:title="@string/title_auto_connect_to_last_server_preference" />
 
         <ListPreference
             android:dependency="auto_connect_to_last_server"
-            android:defaultValue="10"
+            android:defaultValue="1"
             android:dialogTitle="@string/dialog_title_auto_connect_delay_preference"
             android:entries="@array/entries_list_auto_connect_delay_preference"
             android:entryValues="@array/entryvalues_list_auto_connect_delay_preference"
@@ -51,7 +51,7 @@
             android:title="@string/title_auto_connect_delay_preference" />
 
         <CheckBoxPreference
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="app_destroy_on_pause"
             android:summary="@string/terminate_onpause_summary"
             android:title="@string/terminate_onpause_title" />
