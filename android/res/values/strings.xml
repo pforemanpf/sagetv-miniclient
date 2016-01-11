@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">SageTV MiniClient</string>
+    <string name="app_name">SageTV MiniClient2</string>
 
     <string name="media_player_preferences">Media Player</string>
     <string name="title_use_vlc_preference">Use VLC</string>
